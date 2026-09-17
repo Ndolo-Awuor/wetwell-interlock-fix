@@ -1,0 +1,30 @@
+=== Divergence report: unmodified buggy file vs correct ===
+  [sample  ] sample_lag_pump_band_transitions: MATCHES (no divergence)
+  [sample  ] sample_flood_from_clean_state: MATCHES (no divergence)
+  [holdout ] holdout_lowlow_trip_then_immediate_recovery: DIVERGES at ticks [3, 4, 5, 6]
+  [holdout ] holdout_lowlow_retrip_extends_lockout: DIVERGES at ticks [3, 4, 6, 7, 8, 9, 10, 11, 12, 13]
+  [holdout ] holdout_sensor_fault_while_running_then_recovers: DIVERGES at ticks [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  [holdout ] holdout_sensor_fault_no_alarm_would_let_pumps_run_blind: DIVERGES at ticks [2, 3, 4, 5, 6, 7, 8]
+  [holdout ] holdout_flood_interrupts_active_lockout: DIVERGES at ticks [3, 4, 5, 6]
+  [holdout ] holdout_flood_during_fault_induced_lockout: DIVERGES at ticks [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  [holdout ] holdout_mixed_long_scenario: DIVERGES at ticks [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21]
+
+=== Divergence report: naive fix (bugs 1+2 fixed, flood/lockout order swapped) vs correct ===
+  [sample  ] sample_lag_pump_band_transitions: matches
+  [sample  ] sample_flood_from_clean_state: matches
+  [holdout ] holdout_lowlow_trip_then_immediate_recovery: matches
+  [holdout ] holdout_lowlow_retrip_extends_lockout: matches
+  [holdout ] holdout_sensor_fault_while_running_then_recovers: matches
+  [holdout ] holdout_sensor_fault_no_alarm_would_let_pumps_run_blind: matches
+  [holdout ] holdout_flood_interrupts_active_lockout: DIVERGES at ticks [3, 4, 5]
+  [holdout ] holdout_flood_during_fault_induced_lockout: DIVERGES at ticks [3, 4]
+  [holdout ] holdout_mixed_long_scenario: DIVERGES at ticks [12, 13, 14, 15, 16, 17, 18, 19, 21]
+
+All design assertions passed:
+  - sample sequences never expose either bug
+  - every holdout sequence catches the unmodified buggy file (nop -> 0)
+  - a naive fix that reorders the output gate fixes bugs 1+2 but is still
+    caught by the flood-priority trap sequences, and ONLY those
+
+Wrote 2 sample sequences to /home/yvonne/wetwell2/environment/data/sample_sequences.json
+Wrote 7 holdout sequences to /home/yvonne/wetwell2/tests/holdout_sequences.json

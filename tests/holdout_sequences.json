@@ -1,0 +1,1064 @@
+{
+  "holdout_lowlow_trip_then_immediate_recovery": {
+    "inputs": [
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 5.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      }
+    ],
+    "expected": [
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      }
+    ]
+  },
+  "holdout_lowlow_retrip_extends_lockout": {
+    "inputs": [
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 5.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 5.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      }
+    ],
+    "expected": [
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      }
+    ]
+  },
+  "holdout_sensor_fault_while_running_then_recovers": {
+    "inputs": [
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 0.0,
+        "level_fault": true
+      },
+      {
+        "level_pct": 0.0,
+        "level_fault": true
+      },
+      {
+        "level_pct": 0.0,
+        "level_fault": true
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      }
+    ],
+    "expected": [
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": true
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": true
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": true
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      }
+    ]
+  },
+  "holdout_sensor_fault_no_alarm_would_let_pumps_run_blind": {
+    "inputs": [
+      {
+        "level_pct": 80.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 80.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 0.0,
+        "level_fault": true
+      },
+      {
+        "level_pct": 0.0,
+        "level_fault": true
+      },
+      {
+        "level_pct": 0.0,
+        "level_fault": true
+      },
+      {
+        "level_pct": 0.0,
+        "level_fault": true
+      },
+      {
+        "level_pct": 80.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 80.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 80.0,
+        "level_fault": false
+      }
+    ],
+    "expected": [
+      {
+        "pump1_run": true,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": true
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": true
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": true
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": true
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      }
+    ]
+  },
+  "holdout_flood_interrupts_active_lockout": {
+    "inputs": [
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 5.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 96.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 96.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 96.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      }
+    ],
+    "expected": [
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": true,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": true,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": true,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      }
+    ]
+  },
+  "holdout_flood_during_fault_induced_lockout": {
+    "inputs": [
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 0.0,
+        "level_fault": true
+      },
+      {
+        "level_pct": 97.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 97.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      }
+    ],
+    "expected": [
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": true
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": true,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": true,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      }
+    ]
+  },
+  "holdout_mixed_long_scenario": {
+    "inputs": [
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 50.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 75.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 75.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 5.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 30.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 30.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 0.0,
+        "level_fault": true
+      },
+      {
+        "level_pct": 0.0,
+        "level_fault": true
+      },
+      {
+        "level_pct": 30.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 30.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 96.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 96.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 40.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 40.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 40.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 40.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 40.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 40.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 5.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 96.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 10.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 10.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 10.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 10.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 10.0,
+        "level_fault": false
+      },
+      {
+        "level_pct": 10.0,
+        "level_fault": false
+      }
+    ],
+    "expected": [
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": true,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": true
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": true
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": true,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": true,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": false,
+        "lockout_active": false,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": true,
+        "pump2_run": true,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      },
+      {
+        "pump1_run": false,
+        "pump2_run": false,
+        "lockout_active": true,
+        "sensor_fault_alarm": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+schema_version = "1.4"
+
+artifacts = ["/app/interlock.st"]
+
+[task]
+name = "afterquery/wetwell-interlock-fix"
+description = "Diagnose and fix behavioral defects in a PLC-style wet-well duplex pump interlock so it conforms to a written functional spec, without breaking a flood/lockout priority exception."
+authors = [{ name = "<FILL IN: your full name>", email = "<FILL IN: your email>" }]
+keywords = ["plc", "scada", "interlock-logic", "structured-text", "instrumentation-and-control", "fail-safe-design"]
+
+[metadata]
+author_name = "<FILL IN: same as authors[0].name>"
+author_email = "<FILL IN: same as authors[0].email>"
+author_organization = "<FILL IN: your employer/university, or exactly 'Independent Researcher'>"
+author_profile = "<FILL IN: Google Scholar / LinkedIn / personal site URL>"
+research_advisor = ""
+referred_by = ""
+conflicts_of_interest = "None"
+domain = "engineering-sciences"
+field = "electrical-engineering"
+subfield = "instrumentation & control interlock logic"
+category = "Science"
+subcategory = "Electrical & Computer Engineering"
+tags = ["plc", "scada", "interlock-logic", "structured-text", "instrumentation-and-control", "fail-safe-design"]
+expert_time_estimate_hours = 2
+relevant_experience = "<FILL IN: your genuine PLC/SCADA and control-loop background -- specific projects/roles, not generic statements. This is one of the first things reviewers read.>"
+difficulty_explanation = "<FILL IN: why this defeats frontier agents for a real reason -- e.g. the flood-must-interrupt-lockout priority rule is easy to satisfy for the two obvious bugs individually but easy to silently break while fixing them, because a plausible 'clean' restructuring of the output gate reorders the lockout check ahead of the flood check. State clearly that the scenario/spec/data here are synthetic (authored by you), not drawn from a real incident.>"
+solution_explanation = "<FILL IN: high-level -- fix 1 changes the lockout clear condition from 'trip went false' to 'timer reached zero'; fix 2 changes fault handling from 'hold last good value' to 'treat as low-low + raise sensor_fault_alarm'; both fixes must be made without disturbing the existing flood-overrides-lockout branch ordering in the output gate.>"
+verification_explanation = "<FILL IN: ground truth is precomputed by running the reference-correct interlock.st through the same sealed ST interpreter used to grade the agent, over a held-out battery of tick sequences (not shown to the agent) that specifically probe: lockout dwell time, sensor-fault fail-safe behavior, and flood interrupting an active lockout. A tick-by-tick exact match across every held-out sequence is required for reward 1; see authoring/build_sequences.py for the generation and self-check methodology, including an adversarial 'naive fix' fixture proving the flood-priority sequences catch a plausible incomplete fix.>"
+
+[verifier]
+timeout_sec = 300.0
+environment_mode = "separate"
+
+[verifier.environment]
+network_mode = "no-network"
+
+[agent]
+timeout_sec = 10800.0
+
+[environment]
+build_timeout_sec = 600.0
+cpus = 1
+memory_mb = 2048
+storage_mb = 10240
+gpus = 0
+network_mode = "public"
